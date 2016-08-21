@@ -9,7 +9,7 @@ using NS_SampleData;
  *   - add MoveRow()
  *   - add SampleData.cs
  *   - add UI components (unique ID, Case No, Row, Column, About, DataSheet)
- * /
+ */
 
 public class InventoryCS : MonoBehaviour {
 
@@ -44,5 +44,4 @@ public class InventoryCS : MonoBehaviour {
 			T_about.text = NS_SampleData.SampleData.GetDataOfColumn (1);
 		}
 	}
-
 }
