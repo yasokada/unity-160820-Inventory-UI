@@ -4,7 +4,7 @@ using System; // for StringSplitOptions.RemoveEmptyEntries
 
 /*
  * v0.3 2016 Aug. 21
- *   - add ExtractCsvRow()
+ *   - add ExtractCsvColumn()
  * v0.2 2015/11/21
  *   - add replaceNonAsciiToAscii()
  */
@@ -52,13 +52,6 @@ namespace NS_MyStringUtil
 		}
 
 		public static string ExtractCsvColumn(string src, int idx) {
-//			string[] splitted = src.Split(new string[] { System.Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries);
-//			string res = "";
-//			foreach(string each in splitted) {
-//				string [] elements = each.Split(',');
-//				res = res + elements[idx] + System.Environment.NewLine;
-//			}
-//			return res;
 			string [] elements = src.Split(',');
 			if (elements.Length <= idx) {
 				return "";
