@@ -47,6 +47,7 @@ public class InventoryCS : MonoBehaviour {
 		T_caseNo.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_caseNo);
 		T_row.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_row);
 		T_column.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_column);
+		IF_uniqueID.text = getUniqueIndex (T_caseNo.text, T_row.text, T_column.text);
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_dataSheetURL);
