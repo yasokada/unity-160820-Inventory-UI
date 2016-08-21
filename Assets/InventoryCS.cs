@@ -5,6 +5,7 @@ using NS_SampleData;
 using NS_MyStringUtil;
 
 /*
+ *   - add UpdateInfo()
  *   - add [MyStringUtil.cs]
  *   - add OpenURL()
  * v0.1 2016 Aug. 21
@@ -24,6 +25,9 @@ public class InventoryCS : MonoBehaviour {
 	public Text T_about;
 	public Text T_datasheetURL;
 
+	const int kIndex_caseNo = 0;
+	const int kIndex_row = 1;
+	const int kIndex_column = 2;
 	const int kIndex_dataSheetURL = 5; // TODO: put other place to declare
 
 	void Start () {
@@ -34,31 +38,33 @@ public class InventoryCS : MonoBehaviour {
 	
 	}
 
+	private void UpdateInfo(string datstr) {
+		T_caseNo.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_caseNo);
+		T_row.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_row);
+		T_column.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_column);
+		T_about.text = datstr;
+		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_dataSheetURL);
+	}
+
 	public void MoveRow(bool next) {
 		if (next == false) { // previous
 			string dtstr = NS_SampleData.SampleData.GetDataOfRow (0);	
-			T_about.text = dtstr;
-			T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_dataSheetURL);
-			T_about.text = T_datasheetURL.text; // test
+			UpdateInfo (dtstr);
 		} else {
 			string dtstr = NS_SampleData.SampleData.GetDataOfRow (1);
-			T_about.text = dtstr;
-			T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_dataSheetURL);
-			T_about.text = T_datasheetURL.text; // test
+			UpdateInfo (dtstr);
 		}
 	}
 
 	public void MoveColumn(bool next) {
 		if (next == false) { // previous
 			string dtstr = NS_SampleData.SampleData.GetDataOfColumn(0);
-			T_about.text = dtstr;
-			T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_dataSheetURL);
-			T_about.text = T_datasheetURL.text; // test
+			UpdateInfo (dtstr);
 		} else {
 			string dtstr = NS_SampleData.SampleData.GetDataOfColumn (1);
+			UpdateInfo (dtstr);
+			T_caseNo.text = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_caseNo);
 			T_about.text = dtstr;
-			T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_dataSheetURL);
-			T_about.text = T_datasheetURL.text; // test
 		}
 	}
 
