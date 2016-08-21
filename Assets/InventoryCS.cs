@@ -5,6 +5,7 @@ using NS_SampleData;
 using NS_MyStringUtil;
 
 /*
+ *   - add getUniqueIndex()
  * v0.2 2016 Aug. 21
  *   - add UpdateInfo()
  *   - add [MyStringUtil.cs]
@@ -18,7 +19,7 @@ using NS_MyStringUtil;
 
 public class InventoryCS : MonoBehaviour {
 
-	public InputField ID_uniqueID;
+	public InputField IF_uniqueID;
 	public Text T_caseNo;
 	public Text T_row;
 	public Text T_column;
@@ -49,6 +50,18 @@ public class InventoryCS : MonoBehaviour {
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_dataSheetURL);
+	}
+
+	private string getUniqueIndex(string caseNo, string rowNo, string columnNo) {
+		int wrkCase = int.Parse (caseNo);
+		int wrkRow = int.Parse (rowNo);
+		int wrkCol = int.Parse (columnNo);
+
+		string res = 
+			string.Format ("{0:0000}", wrkCase)
+			+ string.Format("{0:00}", wrkRow)
+			+ string.Format("{0:00}", wrkCol);
+		return res;
 	}
 
 	public void MoveRow(bool next) {
