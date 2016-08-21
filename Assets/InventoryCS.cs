@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using NS_SampleData;
 
 /*
+ *   - add OpenURL()
  * v0.1 2016 Aug. 21
  *   - add MoveColumn()
  *   - add MoveRow()
@@ -43,5 +44,9 @@ public class InventoryCS : MonoBehaviour {
 		} else {
 			T_about.text = NS_SampleData.SampleData.GetDataOfColumn (1);
 		}
+	}
+
+	public void OpenURL() {
+		Application.OpenURL ("http://unity3d.com/");
 	}
 }
