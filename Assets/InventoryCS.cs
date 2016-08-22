@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ * v0.3 2016 Aug. 23
  *   - move resource load feature to DataBaseManager class
  *   - update debugReadCsv() to use DataBaseManager class
  *   - add [DataBaseManager.csv]
