@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using System.IO;
 
 using NS_SampleData;
 using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - move resource load feature to DataBaseManager class
  *   - update debugReadCsv() to use DataBaseManager class
  *   - add [DataBaseManager.csv]
  *   - add debugReadCsv() for test
@@ -99,14 +99,8 @@ public class InventoryCS : MonoBehaviour {
 	}
 
 	public void debugReadCsv() {
-		TextAsset csv = Resources.Load ("inventory") as TextAsset;
-		StringReader reader = new StringReader (csv.text);
-		while (reader.Peek () != -1) {
-			string line = reader.ReadLine ();
-			T_about.text = line;
-		}
-
 		DataBaseManager dbm = new DataBaseManager ();
+		dbm.LoadCsvResouce ();
 		T_about.text = dbm.getString ();
 		dbm = null;
 	}
