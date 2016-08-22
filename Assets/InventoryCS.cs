@@ -3,8 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 using NS_SampleData;
 using NS_MyStringUtil;
+using System.IO;
 
 /*
+ *   - add debugReadCsv() for test
  *   - add getUniqueIndex()
  * v0.2 2016 Aug. 21
  *   - add UpdateInfo()
@@ -37,6 +39,7 @@ public class InventoryCS : MonoBehaviour {
 
 	void Start () {
 		T_about.text = NS_SampleData.SampleData.GetDataOfRow (0);	
+		debugReadCsv ();
 	}
 		
 	void Update () {
@@ -89,5 +92,14 @@ public class InventoryCS : MonoBehaviour {
 
 	public void OpenURL() {
 		Application.OpenURL (T_datasheetURL.text);
+	}
+
+	public void debugReadCsv() {
+		TextAsset csv = Resources.Load ("inventory") as TextAsset;
+		StringReader reader = new StringReader (csv.text);
+		while (reader.Peek () != -1) {
+			string line = reader.ReadLine ();
+			T_about.text = line;
+		}
 	}
 }
