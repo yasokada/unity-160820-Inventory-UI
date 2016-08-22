@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using NS_SampleData;
-using NS_MyStringUtil;
 using System.IO;
 
+using NS_SampleData;
+using NS_MyStringUtil;
+using NS_DataBaseManager;
+
 /*
+ *   - update debugReadCsv() to use DataBaseManager class
+ *   - add [DataBaseManager.csv]
  *   - add debugReadCsv() for test
  *   - add getUniqueIndex()
  * v0.2 2016 Aug. 21
@@ -101,5 +105,9 @@ public class InventoryCS : MonoBehaviour {
 			string line = reader.ReadLine ();
 			T_about.text = line;
 		}
+
+		DataBaseManager dbm = new DataBaseManager ();
+		T_about.text = dbm.getString ();
+		dbm = null;
 	}
 }
