@@ -101,7 +101,7 @@ public class InventoryCS : MonoBehaviour {
 	public void SerachWithItemName() {
 		string itmnm = IF_name.text;
 		string dtstr = m_dbm.GetString (itmnm);
-		T_about.text = dtstr; // TODO: parse
+		UpdateInfo(dtstr);
 	}
 
 	public void OpenURL() {
