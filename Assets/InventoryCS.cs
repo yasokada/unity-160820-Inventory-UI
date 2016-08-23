@@ -7,6 +7,9 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - impl B_search button
+ *   - add SerachWithItemName()
+ *   - DataBaseManager: v0.2
  *   - move [kIndex_XXX] to DataBaseManager class
  * v0.3 2016 Aug. 23
  *   - move resource load feature to DataBaseManager class
@@ -35,8 +38,14 @@ public class InventoryCS : MonoBehaviour {
 	public Text T_about;
 	public Text T_datasheetURL;
 
+	DataBaseManager m_dbm;
+
 	void Start () {
 		T_about.text = NS_SampleData.SampleData.GetDataOfRow (0);	
+
+		m_dbm = new DataBaseManager ();
+		m_dbm.LoadCsvResouce ();
+
 		debugReadCsv ();
 	}
 		
@@ -88,14 +97,19 @@ public class InventoryCS : MonoBehaviour {
 		}
 	}
 
+	public void SerachWithItemName() {
+		string itmnm = IF_name.text;
+		string dtstr = m_dbm.GetString (itmnm);
+		T_about.text = dtstr; // TODO: parse
+	}
+
 	public void OpenURL() {
 		Application.OpenURL (T_datasheetURL.text);
 	}
 
 	public void debugReadCsv() {
-		DataBaseManager dbm = new DataBaseManager ();
-		dbm.LoadCsvResouce ();
-		T_about.text = dbm.GetString ("2SK4017");
-		dbm = null;
+//		DataBaseManager dbm = new DataBaseManager ();
+//		dbm.LoadCsvResouce ();
+//		T_about.text = dbm.GetString ("2SK4017");
 	}
 }
