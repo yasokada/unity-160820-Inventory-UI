@@ -51,7 +51,7 @@ public class InventoryCS : MonoBehaviour {
 		IF_uniqueID.text = getUniqueIndex (T_caseNo.text, T_row.text, T_column.text);
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
-		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_dataSheetURL);
+		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_url);
 	}
 
 	private string getUniqueIndex(string caseNo, string rowNo, string columnNo) {
