@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ * v0.3 2016 Aug. 24
  *   - GetString() takes [itemName] arg
  * v0.2 2016 Aug. 24
  *   - update getString() to use getElementWithLikeSearch()

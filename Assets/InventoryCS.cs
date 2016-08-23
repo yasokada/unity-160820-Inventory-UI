@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ * v0.4 2016 Aug. 24
  *   - impl B_search button
  *   - add SerachWithItemName()
  *   - DataBaseManager: v0.2
