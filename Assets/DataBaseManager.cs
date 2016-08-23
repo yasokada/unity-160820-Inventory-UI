@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add getElementWithLikeSearch()
  *   - add dictionary [m_dic]
  *   - add [kIndex_checkDate]
  *   - add [kIndex_XXX] such as kIndex_row
@@ -40,13 +41,19 @@ namespace NS_DataBaseManager
 			while (reader.Peek () != -1) {
 				line = reader.ReadLine ();
 				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
-				m_dic->Add (itmnm, line);
+				m_dic.Add (itmnm, line);
 			}
 //			m_dataString = line;
 		}
 
 		public string getString() {
+			return "dummy";
 //			return m_dataString;
+		}
+
+		private static string getElementWithLikeSearch(Dictionary<string, string> myDic, string searchKey) {
+			//Dictionaryの規定値は｢null, null｣なので､空文字を返したい場合はnull判定を入れる
+			return myDic.Where(n => n.Key.Contains(searchKey)).FirstOrDefault().Value;
 		}
 	}
 }
