@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
+//using System.Collections;
 using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+
+using NS_MyStringUtil;
 
 /*
+ *   - add dictionary [m_dic]
  *   - add [kIndex_checkDate]
  *   - add [kIndex_XXX] such as kIndex_row
  * v0.1 2016 Aug. 23 
@@ -12,7 +17,8 @@ using System.IO;
 namespace NS_DataBaseManager
 {
 	public class DataBaseManager {
-		string m_dataString;
+		Dictionary <string, string> m_dic;
+//		string m_dataString;
 
 		public const int kIndex_caseNo = 0;
 		public const int kIndex_row = 1;
@@ -23,18 +29,24 @@ namespace NS_DataBaseManager
 		public const int kIndex_checkDate = 6;
 
 		public void LoadCsvResouce() {
+			if (m_dic == null) {
+				m_dic = new Dictionary<string, string>();
+			}
+
 			TextAsset csv = Resources.Load ("inventory") as TextAsset;
 			StringReader reader = new StringReader (csv.text);
 			string line = "";
+			string itmnm;
 			while (reader.Peek () != -1) {
-				line = line + reader.ReadLine ();
-				// TODO: add CRLF
+				line = reader.ReadLine ();
+				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
+				m_dic->Add (itmnm, line);
 			}
-			m_dataString = line;
+//			m_dataString = line;
 		}
 
 		public string getString() {
-			return m_dataString;
+//			return m_dataString;
 		}
 	}
 }
