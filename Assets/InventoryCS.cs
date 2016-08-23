@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - move [kIndex_XXX] to DataBaseManager class
  * v0.3 2016 Aug. 23
  *   - move resource load feature to DataBaseManager class
  *   - update debugReadCsv() to use DataBaseManager class
@@ -34,14 +35,6 @@ public class InventoryCS : MonoBehaviour {
 	public Text T_about;
 	public Text T_datasheetURL;
 
-	// TOOD: 0m > put other place to declear
-	const int kIndex_caseNo = 0;
-	const int kIndex_row = 1;
-	const int kIndex_column = 2;
-	const int kIndex_name = 3;
-	const int kIndex_about = 4;
-	const int kIndex_dataSheetURL = 5;
-
 	void Start () {
 		T_about.text = NS_SampleData.SampleData.GetDataOfRow (0);	
 		debugReadCsv ();
@@ -52,13 +45,13 @@ public class InventoryCS : MonoBehaviour {
 	}
 
 	private void UpdateInfo(string datstr) {
-		T_caseNo.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_caseNo);
-		T_row.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_row);
-		T_column.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_column);
+		T_caseNo.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_caseNo);
+		T_row.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_row);
+		T_column.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_column);
 		IF_uniqueID.text = getUniqueIndex (T_caseNo.text, T_row.text, T_column.text);
-		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_name);
-		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_about);
-		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, kIndex_dataSheetURL);
+		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_name);
+		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
+		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_dataSheetURL);
 	}
 
 	private string getUniqueIndex(string caseNo, string rowNo, string columnNo) {
@@ -90,7 +83,7 @@ public class InventoryCS : MonoBehaviour {
 		} else {
 			string dtstr = NS_SampleData.SampleData.GetDataOfColumn (1);
 			UpdateInfo (dtstr);
-			T_caseNo.text = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_caseNo);
+			T_caseNo.text = MyStringUtil.ExtractCsvColumn (dtstr, DataBaseManager.kIndex_caseNo);
 			T_about.text = dtstr;
 		}
 	}
