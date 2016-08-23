@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - update getString() to use getElementWithLikeSearch()
  *   - add getElementWithLikeSearch()
  *   - add dictionary [m_dic]
  *   - add [kIndex_checkDate]
@@ -19,7 +20,6 @@ namespace NS_DataBaseManager
 {
 	public class DataBaseManager {
 		Dictionary <string, string> m_dic;
-//		string m_dataString;
 
 		public const int kIndex_caseNo = 0;
 		public const int kIndex_row = 1;
@@ -43,12 +43,11 @@ namespace NS_DataBaseManager
 				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
 				m_dic.Add (itmnm, line);
 			}
-//			m_dataString = line;
 		}
 
 		public string getString() {
-			return "dummy";
-//			return m_dataString;
+			string res = getElementWithLikeSearch (m_dic, "2SK4017");
+			return res;
 		}
 
 		private static string getElementWithLikeSearch(Dictionary<string, string> myDic, string searchKey) {
