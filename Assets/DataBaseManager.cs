@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ * v0.2 2016 Aug. 24
  *   - update getString() to use getElementWithLikeSearch()
  *   - add getElementWithLikeSearch()
  *   - add dictionary [m_dic]
@@ -45,7 +46,7 @@ namespace NS_DataBaseManager
 			}
 		}
 
-		public string getString() {
+		public string GetString() {
 			string res = getElementWithLikeSearch (m_dic, "2SK4017");
 			return res;
 		}

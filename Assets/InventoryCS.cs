@@ -95,7 +95,7 @@ public class InventoryCS : MonoBehaviour {
 	public void debugReadCsv() {
 		DataBaseManager dbm = new DataBaseManager ();
 		dbm.LoadCsvResouce ();
-		T_about.text = dbm.getString ();
+		T_about.text = dbm.GetString ();
 		dbm = null;
 	}
 }
