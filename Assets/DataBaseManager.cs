@@ -7,6 +7,8 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - update GetUniqueIndexString() to use int.TryParse() instead of int.Parse()
+ *   - add GetStringOfUniqueIndex()
  *   - rename GetString() to GetStringOfName()
  *   - add [m_dic_uniqueIndexKey]
  *     - update LoadCsvResource()
@@ -73,9 +75,10 @@ namespace NS_DataBaseManager
 			string rw = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_row);
 			string clmn = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_column);
 
-			int shelf = int.Parse (shlf);
-			int row = int.Parse (rw);
-			int column = int.Parse(clmn);
+			int shelf, row, column;
+			int.TryParse (shlf, out shelf);
+			int.TryParse (rw, out row);
+			int.TryParse (clmn, out column);
 
 			return GetUniqueIndexString (shelf, row, column);
 		}
@@ -90,6 +93,11 @@ namespace NS_DataBaseManager
 			
 		public string GetStringOfName(string itemName) {
 			string res = getElementWithLikeSearch (m_dic_nameKey, itemName);
+			return res;
+		}
+
+		public string GetStringOfUniqueIndex(string uniqueIdx) {
+			string res = getElementWithLikeSearch (m_dic_uniqueIndexKey, uniqueIdx);
 			return res;
 		}
 
