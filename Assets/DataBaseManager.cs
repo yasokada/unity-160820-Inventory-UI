@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - rename [m_dic] to [m_dic_nameKey]
  *   - add GetUniqueIndexString()
  * v0.5 2016 Aug. 25
  *   - rename [kIndex_caseNo] to [kIndex_shelfNo]
@@ -27,7 +28,7 @@ using NS_MyStringUtil;
 namespace NS_DataBaseManager
 {
 	public class DataBaseManager {
-		Dictionary <string, string> m_dic;
+		Dictionary <string, string> m_dic_nameKey;
 
 		public const int kIndex_shelfNo = 0;
 		public const int kIndex_row = 1;
@@ -38,8 +39,8 @@ namespace NS_DataBaseManager
 		public const int kIndex_checkDate = 6;
 
 		public void LoadCsvResource() {
-			if (m_dic == null) {
-				m_dic = new Dictionary<string, string>();
+			if (m_dic_nameKey == null) {
+				m_dic_nameKey = new Dictionary<string, string>();
 			}
 
 			TextAsset csv = Resources.Load ("inventory") as TextAsset;
@@ -49,7 +50,7 @@ namespace NS_DataBaseManager
 			while (reader.Peek () != -1) {
 				line = reader.ReadLine ();
 				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
-				m_dic.Add (itmnm, line);
+				m_dic_nameKey.Add (itmnm, line);
 			}
 		}
 
@@ -62,7 +63,7 @@ namespace NS_DataBaseManager
 		}
 			
 		public string GetString(string itemName) {
-			string res = getElementWithLikeSearch (m_dic, itemName);
+			string res = getElementWithLikeSearch (m_dic_nameKey, itemName);
 			return res;
 		}
 
