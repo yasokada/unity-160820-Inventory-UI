@@ -7,8 +7,9 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add GetUniqueIndexString(string)
  *   - rename [m_dic] to [m_dic_nameKey]
- *   - add GetUniqueIndexString()
+ *   - add GetUniqueIndexString(int, int, int)
  * v0.5 2016 Aug. 25
  *   - rename [kIndex_caseNo] to [kIndex_shelfNo]
  * v0.4 2016 Aug. 25
@@ -28,7 +29,7 @@ using NS_MyStringUtil;
 namespace NS_DataBaseManager
 {
 	public class DataBaseManager {
-		Dictionary <string, string> m_dic_nameKey;
+		Dictionary <string, string> m_dic_nameKey; // SearchKey is item name
 
 		public const int kIndex_shelfNo = 0;
 		public const int kIndex_row = 1;
@@ -52,6 +53,18 @@ namespace NS_DataBaseManager
 				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
 				m_dic_nameKey.Add (itmnm, line);
 			}
+		}
+
+		public string GetUniqueIndexString(string dtstr) {
+			string shlf = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_shelfNo);
+			string rw = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_row);
+			string clmn = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_column);
+
+			int shelf = int.Parse (shlf);
+			int row = int.Parse (rw);
+			int column = int.Parse(clmn);
+
+			return GetUniqueIndexString (shelf, row, column);
 		}
 
 		public string GetUniqueIndexString(int shelfNo, int row, int column) {
