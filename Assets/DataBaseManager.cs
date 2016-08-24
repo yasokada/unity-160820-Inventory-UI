@@ -7,6 +7,8 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add GetUniqueIndexString()
+ * v0.5 2016 Aug. 25
  *   - rename [kIndex_caseNo] to [kIndex_shelfNo]
  * v0.4 2016 Aug. 25
  *   - fix typo > [Resouce] to [Resource]
@@ -49,6 +51,14 @@ namespace NS_DataBaseManager
 				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
 				m_dic.Add (itmnm, line);
 			}
+		}
+
+		public string GetUniqueIndexString(int shelfNo, int row, int column) {
+			string res;
+			res = string.Format ("{0:0000}", shelfNo);
+			res = res + string.Format ("{0:00}", row);
+			res = res + string.Format ("{0:00}", column);
+			return res;
 		}
 			
 		public string GetString(string itemName) {
