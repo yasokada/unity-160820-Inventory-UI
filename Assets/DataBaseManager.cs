@@ -7,6 +7,8 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add [m_dic_uniqueIndexKey]
+ *     - update LoadCsvResource()
  *   - add GetUniqueIndexString(string)
  *   - rename [m_dic] to [m_dic_nameKey]
  *   - add GetUniqueIndexString(int, int, int)
@@ -30,6 +32,7 @@ namespace NS_DataBaseManager
 {
 	public class DataBaseManager {
 		Dictionary <string, string> m_dic_nameKey; // SearchKey is item name
+		Dictionary <string, string> m_dic_uniqueIndexKey; // SearchKey is UniqueIndex
 
 		public const int kIndex_shelfNo = 0;
 		public const int kIndex_row = 1;
@@ -43,15 +46,24 @@ namespace NS_DataBaseManager
 			if (m_dic_nameKey == null) {
 				m_dic_nameKey = new Dictionary<string, string>();
 			}
+			if (m_dic_uniqueIndexKey == null) {
+				m_dic_uniqueIndexKey = new Dictionary<string, string> ();
+			}
 
 			TextAsset csv = Resources.Load ("inventory") as TextAsset;
 			StringReader reader = new StringReader (csv.text);
 			string line = "";
 			string itmnm;
+			string unqidx;
+
 			while (reader.Peek () != -1) {
 				line = reader.ReadLine ();
+				//1.
 				itmnm = MyStringUtil.ExtractCsvColumn (line, kIndex_name);
 				m_dic_nameKey.Add (itmnm, line);
+				// 2.
+				unqidx = GetUniqueIndexString(line);
+				m_dic_uniqueIndexKey.Add (unqidx, line);
 			}
 		}
 
