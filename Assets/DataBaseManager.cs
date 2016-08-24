@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ * v0.6 2016 Aug. 25
  *   - update GetUniqueIndexString() to use int.TryParse() instead of int.Parse()
  *   - add GetStringOfUniqueIndex()
  *   - rename GetString() to GetStringOfName()

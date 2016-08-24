@@ -7,6 +7,9 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ * v0.5 2016 Aug. 25
+ *   - add SearchWithUniqueIndex()
+ *   - DataBaseManager: v0.6
  *   - rename [T_caseNo] to [T_shelfNo]
  *   - enlarge height and width of [T_datasheetURL]
  *   - DataBaseManager: v0.4
@@ -104,6 +107,12 @@ public class InventoryCS : MonoBehaviour {
 	public void SerachWithItemName() {
 		string itmnm = IF_name.text;
 		string dtstr = m_dbm.GetStringOfName (itmnm);
+		UpdateInfo(dtstr);
+	}
+
+	public void SearchWithUniqueIndex() {
+		string unqidx = IF_uniqueID.text;
+		string dtstr = m_dbm.GetStringOfUniqueIndex (unqidx);
 		UpdateInfo(dtstr);
 	}
 
