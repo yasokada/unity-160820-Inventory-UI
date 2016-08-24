@@ -7,8 +7,8 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
- *   - add null check in SearchWithUniqueIndex()
  * v0.5 2016 Aug. 25
+ *   - add null check in SearchWithUniqueIndex()
  *   - add SearchWithUniqueIndex()
  *   - DataBaseManager: v0.6
  *   - rename [T_caseNo] to [T_shelfNo]
