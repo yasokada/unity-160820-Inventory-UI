@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - rename GetString() to GetStringOfName()
  *   - add [m_dic_uniqueIndexKey]
  *     - update LoadCsvResource()
  *   - add GetUniqueIndexString(string)
@@ -87,7 +88,7 @@ namespace NS_DataBaseManager
 			return res;
 		}
 			
-		public string GetString(string itemName) {
+		public string GetStringOfName(string itemName) {
 			string res = getElementWithLikeSearch (m_dic_nameKey, itemName);
 			return res;
 		}

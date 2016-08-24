@@ -103,7 +103,7 @@ public class InventoryCS : MonoBehaviour {
 
 	public void SerachWithItemName() {
 		string itmnm = IF_name.text;
-		string dtstr = m_dbm.GetString (itmnm);
+		string dtstr = m_dbm.GetStringOfName (itmnm);
 		UpdateInfo(dtstr);
 	}
 
