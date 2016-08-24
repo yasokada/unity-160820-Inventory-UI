@@ -45,7 +45,7 @@ public class InventoryCS : MonoBehaviour {
 		T_about.text = NS_SampleData.SampleData.GetDataOfRow (0);	
 
 		m_dbm = new DataBaseManager ();
-		m_dbm.LoadCsvResouce ();
+		m_dbm.LoadCsvResource ();
 
 		debugReadCsv ();
 	}

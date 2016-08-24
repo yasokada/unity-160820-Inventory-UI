@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - fix typo > [Resouce] to [Resource]
  * v0.3 2016 Aug. 24
  *   - GetString() takes [itemName] arg
  * v0.2 2016 Aug. 24
@@ -32,7 +33,7 @@ namespace NS_DataBaseManager
 		public const int kIndex_url = 5;
 		public const int kIndex_checkDate = 6;
 
-		public void LoadCsvResouce() {
+		public void LoadCsvResource() {
 			if (m_dic == null) {
 				m_dic = new Dictionary<string, string>();
 			}
