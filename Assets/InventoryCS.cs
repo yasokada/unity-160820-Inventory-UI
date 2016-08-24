@@ -7,6 +7,8 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - enlarge height and width of [T_datasheetURL]
+ *   - DataBaseManager: v0.4
  * v0.4 2016 Aug. 24
  *   - impl B_search button
  *   - add SerachWithItemName()

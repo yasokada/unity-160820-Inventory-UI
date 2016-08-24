@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ * v0.4 2016 Aug. 25
  *   - fix typo > [Resouce] to [Resource]
  * v0.3 2016 Aug. 24
  *   - GetString() takes [itemName] arg
