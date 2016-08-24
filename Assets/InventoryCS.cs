@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - rename [T_caseNo] to [T_shelfNo]
  *   - enlarge height and width of [T_datasheetURL]
  *   - DataBaseManager: v0.4
  * v0.4 2016 Aug. 24
@@ -34,7 +35,7 @@ using NS_DataBaseManager;
 public class InventoryCS : MonoBehaviour {
 
 	public InputField IF_uniqueID;
-	public Text T_caseNo;
+	public Text T_shelfNo;
 	public Text T_row;
 	public Text T_column;
 	public InputField IF_name;
@@ -57,10 +58,10 @@ public class InventoryCS : MonoBehaviour {
 	}
 
 	private void UpdateInfo(string datstr) {
-		T_caseNo.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_caseNo);
+		T_shelfNo.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_shelfNo);
 		T_row.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_row);
 		T_column.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_column);
-		IF_uniqueID.text = getUniqueIndex (T_caseNo.text, T_row.text, T_column.text);
+		IF_uniqueID.text = getUniqueIndex (T_shelfNo.text, T_row.text, T_column.text);
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_url);
@@ -95,7 +96,7 @@ public class InventoryCS : MonoBehaviour {
 		} else {
 			string dtstr = NS_SampleData.SampleData.GetDataOfColumn (1);
 			UpdateInfo (dtstr);
-			T_caseNo.text = MyStringUtil.ExtractCsvColumn (dtstr, DataBaseManager.kIndex_caseNo);
+			T_shelfNo.text = MyStringUtil.ExtractCsvColumn (dtstr, DataBaseManager.kIndex_shelfNo);
 			T_about.text = dtstr;
 		}
 	}

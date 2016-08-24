@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - rename [kIndex_caseNo] to [kIndex_shelfNo]
  * v0.4 2016 Aug. 25
  *   - fix typo > [Resouce] to [Resource]
  * v0.3 2016 Aug. 24
@@ -26,7 +27,7 @@ namespace NS_DataBaseManager
 	public class DataBaseManager {
 		Dictionary <string, string> m_dic;
 
-		public const int kIndex_caseNo = 0;
+		public const int kIndex_shelfNo = 0;
 		public const int kIndex_row = 1;
 		public const int kIndex_column = 2;
 		public const int kIndex_name = 3;
@@ -49,7 +50,7 @@ namespace NS_DataBaseManager
 				m_dic.Add (itmnm, line);
 			}
 		}
-
+			
 		public string GetString(string itemName) {
 			string res = getElementWithLikeSearch (m_dic, itemName);
 			return res;
