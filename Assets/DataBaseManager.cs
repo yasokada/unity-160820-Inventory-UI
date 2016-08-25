@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add GetUniqueIndexString_moveColumn()
  *   - add GetUniqueIndexString_moveRow()
  *   - add GetUniqueIndexString(string, string, string)
  * v0.6 2016 Aug. 25
@@ -118,6 +119,27 @@ namespace NS_DataBaseManager
 			string uqidx = GetUniqueIndexString (shlf, rw, clm);
 			return GetStringOfUniqueIndex (uqidx);
 		}
+
+		public string GetUniqueIndexString_moveColumn(string shelfNo, string row, string column, bool nextColumn) {
+			int shlf, rw, clm;
+
+			int.TryParse (shelfNo, out shlf);
+			int.TryParse (row, out rw);
+			int.TryParse (column, out clm);
+
+			if (nextColumn) {
+				clm = clm+ 1;
+			} else {
+				clm = clm - 1;
+				if (clm < 1) {
+					clm = 1;
+				}
+			}
+
+			string uqidx = GetUniqueIndexString (shlf, rw, clm);
+			return GetStringOfUniqueIndex (uqidx);
+		}
+
 
 		public string GetStringOfName(string itemName) {
 			string res = getElementWithLikeSearch (m_dic_nameKey, itemName);
