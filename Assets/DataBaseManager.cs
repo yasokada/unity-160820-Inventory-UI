@@ -80,10 +80,10 @@ namespace NS_DataBaseManager
 			return GetUniqueIndexString (sehlfNo, row, column);
 		}
 
-		public string GetUniqueIndexString(string sehlfNo, string row, string column) {
+		public string GetUniqueIndexString(string shelfNo, string row, string column) {
 			int shlf, rw, clm;
 
-			int.TryParse (sehlfNo, out shlf);
+			int.TryParse (shelfNo, out shlf);
 			int.TryParse (row, out rw);
 			int.TryParse (column, out clm);
 
@@ -97,7 +97,7 @@ namespace NS_DataBaseManager
 			res = res + string.Format ("{0:00}", column);
 			return res;
 		}
-			
+						
 		public string GetStringOfName(string itemName) {
 			string res = getElementWithLikeSearch (m_dic_nameKey, itemName);
 			return res;
