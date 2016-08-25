@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - can move prev/next for row
  *   - remove debugReadCsv()
  * v0.5 2016 Aug. 25
  *   - add null check in SearchWithUniqueIndex()
@@ -83,11 +84,13 @@ public class InventoryCS : MonoBehaviour {
 	}
 
 	public void MoveRow(bool next) {
-		if (next == false) { // previous
-			string dtstr = NS_SampleData.SampleData.GetDataOfRow (0);	
-			UpdateInfo (dtstr);
-		} else {
-			string dtstr = NS_SampleData.SampleData.GetDataOfRow (1);
+		string dtstr = m_dbm.GetUniqueIndexString_moveRow (
+			               T_shelfNo.text,
+			               T_row.text,
+			               T_column.text,
+			/* nextRow=*/next);
+
+		if (dtstr != null) {
 			UpdateInfo (dtstr);
 		}
 	}

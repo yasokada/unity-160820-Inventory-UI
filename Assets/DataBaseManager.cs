@@ -106,8 +106,6 @@ namespace NS_DataBaseManager
 			int.TryParse (row, out rw);
 			int.TryParse (column, out clm);
 
-			string res;
-
 			if (nextRow) {
 				rw = rw + 1;
 			} else {
@@ -117,7 +115,8 @@ namespace NS_DataBaseManager
 				}
 			}
 
-			return GetUniqueIndexString (shlf, rw, clm);		
+			string uqidx = GetUniqueIndexString (shlf, rw, clm);
+			return GetStringOfUniqueIndex (uqidx);
 		}
 
 		public string GetStringOfName(string itemName) {
