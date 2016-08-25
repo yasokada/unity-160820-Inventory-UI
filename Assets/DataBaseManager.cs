@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add GetUniqueIndexString(string, string, string)
  * v0.6 2016 Aug. 25
  *   - update GetUniqueIndexString() to use int.TryParse() instead of int.Parse()
  *   - add GetStringOfUniqueIndex()
@@ -72,16 +73,21 @@ namespace NS_DataBaseManager
 		}
 
 		public string GetUniqueIndexString(string dtstr) {
-			string shlf = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_shelfNo);
-			string rw = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_row);
-			string clmn = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_column);
+			string sehlfNo = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_shelfNo);
+			string row = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_row);
+			string column = MyStringUtil.ExtractCsvColumn (dtstr, kIndex_column);
 
-			int shelf, row, column;
-			int.TryParse (shlf, out shelf);
-			int.TryParse (rw, out row);
-			int.TryParse (clmn, out column);
+			return GetUniqueIndexString (sehlfNo, row, column);
+		}
 
-			return GetUniqueIndexString (shelf, row, column);
+		public string GetUniqueIndexString(string sehlfNo, string row, string column) {
+			int shlf, rw, clm;
+
+			int.TryParse (sehlfNo, out shlf);
+			int.TryParse (row, out rw);
+			int.TryParse (column, out clm);
+
+			return GetUniqueIndexString (shlf, rw, clm);
 		}
 
 		public string GetUniqueIndexString(int shelfNo, int row, int column) {
