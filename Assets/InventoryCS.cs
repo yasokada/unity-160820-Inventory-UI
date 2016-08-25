@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - remove debugReadCsv()
  * v0.5 2016 Aug. 25
  *   - add null check in SearchWithUniqueIndex()
  *   - add SearchWithUniqueIndex()
@@ -53,8 +54,6 @@ public class InventoryCS : MonoBehaviour {
 
 		m_dbm = new DataBaseManager ();
 		m_dbm.LoadCsvResource ();
-
-		debugReadCsv ();
 	}
 		
 	void Update () {
@@ -123,11 +122,5 @@ public class InventoryCS : MonoBehaviour {
 
 	public void OpenURL() {
 		Application.OpenURL (T_datasheetURL.text);
-	}
-
-	public void debugReadCsv() {
-//		DataBaseManager dbm = new DataBaseManager ();
-//		dbm.LoadCsvResouce ();
-//		T_about.text = dbm.GetString ("2SK4017");
 	}
 }
