@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ * v0.7 2016 Aug. 26
  *   - add GetUniqueIndexString_moveColumn()
  *   - add GetUniqueIndexString_moveRow()
  *   - add GetUniqueIndexString(string, string, string)

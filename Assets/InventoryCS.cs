@@ -7,7 +7,10 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ * v0.6 2016 Aug. 26
+ *   - can move prev/next for column
  *   - can move prev/next for row
+ *   - DataBaseManager: v0.7
  *   - remove debugReadCsv()
  * v0.5 2016 Aug. 25
  *   - add null check in SearchWithUniqueIndex()
@@ -96,14 +99,14 @@ public class InventoryCS : MonoBehaviour {
 	}
 
 	public void MoveColumn(bool next) {
-		if (next == false) { // previous
-			string dtstr = NS_SampleData.SampleData.GetDataOfColumn(0);
+		string dtstr = m_dbm.GetUniqueIndexString_moveColumn (
+			T_shelfNo.text,
+			T_row.text,
+			T_column.text,
+			/* nextColumn=*/next);
+
+		if (dtstr != null) {
 			UpdateInfo (dtstr);
-		} else {
-			string dtstr = NS_SampleData.SampleData.GetDataOfColumn (1);
-			UpdateInfo (dtstr);
-			T_shelfNo.text = MyStringUtil.ExtractCsvColumn (dtstr, DataBaseManager.kIndex_shelfNo);
-			T_about.text = dtstr;
 		}
 	}
 
