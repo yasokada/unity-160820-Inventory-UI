@@ -5,7 +5,10 @@ using UnityEngine.UI;
 using NS_MyStringUtil;
 using NS_DataBaseManager;
 
+
 /*
+ *   - show version
+ *     + add [L_appName],[T_version]
  *   - add [ScreenKeeperGO] to keep size for android
  *   - delete [SampleData.cs]
  * v0.7 2016 Aug. 27
@@ -51,6 +54,8 @@ using NS_DataBaseManager;
 
 public class InventoryCS : MonoBehaviour {
 
+	public const string kVersion = "v0.8";
+
 	public InputField IF_uniqueID;
 	public Text T_shelfNo;
 	public Text T_row;
@@ -60,12 +65,15 @@ public class InventoryCS : MonoBehaviour {
 	public Text T_datasheetURL;
 	public Text T_amount;
 	public Text T_checkDate;
+	public Text T_version;
 
 	DataBaseManager m_dbm;
 
 	void Start () {
 		m_dbm = new DataBaseManager ();
 		m_dbm.LoadCsvResource ();
+
+		T_version.text = kVersion;
 	}
 		
 	void Update () {
