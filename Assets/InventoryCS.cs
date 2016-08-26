@@ -2,11 +2,11 @@
 using System.Collections;
 using UnityEngine.UI;
 
-using NS_SampleData;
 using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - delete [SampleData.cs]
  * v0.7 2016 Aug. 27
  *   - MyStringUtil: v0.4
  *   - display [T_amount] from database
@@ -63,8 +63,6 @@ public class InventoryCS : MonoBehaviour {
 	DataBaseManager m_dbm;
 
 	void Start () {
-		T_about.text = NS_SampleData.SampleData.GetDataOfRow (0);	
-
 		m_dbm = new DataBaseManager ();
 		m_dbm.LoadCsvResource ();
 	}
