@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ * v0.8 2016 Aug. 27
  *   - add [kIndex_amount]
  * v0.7 2016 Aug. 26
  *   - add GetUniqueIndexString_moveColumn()
