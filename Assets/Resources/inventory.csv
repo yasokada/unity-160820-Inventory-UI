@@ -1,7 +1,7 @@
 shelfNo,row,column,name,about,url,checkDate,amount
-1,1,1,HC-SR04,[廃版] Ultrasonic sensor...,https://www.switch-science.com/catalog/1606/,160823,1
+1,1,1,HC-SR04,"[不具合品] Ultrasonic sensor..., エコーが安定しない",https://www.switch-science.com/catalog/1606/,160823,1
 1,1,2,2SK4017,東芝電界効果トランジスタ。4V駆動。オン抵抗が低い。,http://akizukidenshi.com/download/ds/toshiba/2SK4017.pdf,160823,1
-1,1,3,ESP-WROOM-02,電源電圧 3.0-3.6V。消費電流 平均 80mA。,https://www.switch-science.com/catalog/2346/,160823,3
+1,1,3,ESP-WROOM-02,"電源電圧 3.0-3.6V, 消費電流 平均 80mA, ",https://www.switch-science.com/catalog/2346/,160823,3
 1,2,1,033CC0,三端子レギュレータ,http://www.tyro-teq.com/ds/pdf/b/0055/BAJ2CC0FP.pdf,160823,3
 1,2,2,BST76A,NチャネルMOSFET,http://aitendo3.sakura.ne.jp/aitendo_data/product_img/transisitor/BST76A/BST76A_philips.pdf,160823,3
 1,3,1,AQM0802,I2C接続小型キャラクタLCDモジュール　8x2行,http://akizukidenshi.com/catalog/g/gP-06669/,160826,3
