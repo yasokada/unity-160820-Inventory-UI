@@ -7,6 +7,7 @@ using System.Linq;
 using NS_MyStringUtil;
 
 /*
+ *   - add [kIndex_amount]
  * v0.7 2016 Aug. 26
  *   - add GetUniqueIndexString_moveColumn()
  *   - add GetUniqueIndexString_moveRow()
@@ -49,6 +50,7 @@ namespace NS_DataBaseManager
 		public const int kIndex_about = 4;
 		public const int kIndex_url = 5;
 		public const int kIndex_checkDate = 6;
+		public const int kIndex_amount = 7;
 
 		public void LoadCsvResource() {
 			if (m_dic_nameKey == null) {

@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - display [T_amount] from database
  *   - display [T_checkDate] from database
  *   - add [L_checkDate],[T_checkDate]
  *   - add [L_amount],[T_amount]
@@ -78,7 +79,7 @@ public class InventoryCS : MonoBehaviour {
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_url);
-		T_amount.text = "31"; // TODO:
+		T_amount.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_amount);
 		T_checkDate.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_checkDate);
 	}
 
