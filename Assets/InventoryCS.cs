@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - add [L_amount],[T_amount]
  *   - update [Inventory.csv]
  * v0.6 2016 Aug. 26
  *   - can move prev/next for column
@@ -51,6 +52,7 @@ public class InventoryCS : MonoBehaviour {
 	public InputField IF_name;
 	public Text T_about;
 	public Text T_datasheetURL;
+	public Text T_amount;
 
 	DataBaseManager m_dbm;
 
@@ -73,6 +75,7 @@ public class InventoryCS : MonoBehaviour {
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_url);
+		T_amount.text = "31";
 	}
 
 	private string getUniqueIndex(string caseNo, string rowNo, string columnNo) {
