@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - update [Inventory.csv]
  * v0.6 2016 Aug. 26
  *   - can move prev/next for column
  *   - can move prev/next for row
