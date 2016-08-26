@@ -7,6 +7,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - add [L_checkDate],[T_checkDate]
  *   - add [L_amount],[T_amount]
  *   - update [Inventory.csv]
  * v0.6 2016 Aug. 26
@@ -53,6 +54,7 @@ public class InventoryCS : MonoBehaviour {
 	public Text T_about;
 	public Text T_datasheetURL;
 	public Text T_amount;
+	public Text T_checkDate;
 
 	DataBaseManager m_dbm;
 
@@ -75,7 +77,8 @@ public class InventoryCS : MonoBehaviour {
 		IF_name.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_name);
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_url);
-		T_amount.text = "31";
+		T_amount.text = "31"; // TODO:
+		T_checkDate.text = "160101" // TODO:
 	}
 
 	private string getUniqueIndex(string caseNo, string rowNo, string columnNo) {
