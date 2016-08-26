@@ -7,6 +7,8 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ * v0.7 2016 Aug. 27
+ *   - MyStringUtil: v0.4
  *   - display [T_amount] from database
  *   - display [T_checkDate] from database
  *   - add [L_checkDate],[T_checkDate]
