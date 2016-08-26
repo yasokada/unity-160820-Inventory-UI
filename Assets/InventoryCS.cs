@@ -6,6 +6,7 @@ using NS_MyStringUtil;
 using NS_DataBaseManager;
 
 /*
+ *   - add [ScreenKeeperGO] to keep size for android
  *   - delete [SampleData.cs]
  * v0.7 2016 Aug. 27
  *   - MyStringUtil: v0.4
