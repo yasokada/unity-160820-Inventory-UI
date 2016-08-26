@@ -78,7 +78,7 @@ public class InventoryCS : MonoBehaviour {
 		T_about.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_about);
 		T_datasheetURL.text = MyStringUtil.ExtractCsvColumn (datstr, DataBaseManager.kIndex_url);
 		T_amount.text = "31"; // TODO:
-		T_checkDate.text = "160101" // TODO:
+		T_checkDate.text = "160101"; // TODO:
 	}
 
 	private string getUniqueIndex(string caseNo, string rowNo, string columnNo) {
