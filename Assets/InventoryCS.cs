@@ -7,6 +7,8 @@ using NS_DataBaseManager;
 
 
 /*
+ * v0.9 2016 Aug. 27
+ *   - fix bug > IF_typeName cannot handle Japanese
  * v0.8 2016 Aug. 27
  *   - show version
  *     + add [L_appName],[T_version]
