@@ -5,6 +5,19 @@ shelfNo,row,column,name,about,url,checkDate,amount
 1,1,4,Raspberry Pi2 Model B_151108,Raspberry Pi2 Model B (2015/11/08購入),http://akizukidenshi.com/catalog/g/gM-09024/,160827,1
 1,1,5,CR123A,カメラ用リチウム電池,http://panasonic.jp/battery/lithium/p-db/CR123A.html,160827,4
 1,1,6,はんだ1.0mm,リール巻鉛入りはんだ 電子工作用はんだ 100g Φ1.0mm,http://www.goot.jp/handakanren/se-06010/,160827,0.5
+1,1,7,ZS-042,リアルタイムクロックモジュール,http://qiita.com/7of9/items/2219133303c5c9ea27ae,160827,3
+1,1,8,ブレッドボードAD-100,ブレッドボード[RoHS] AD-100,http://eleshop.jp/shop/g/g916312/,160827,2
+1,1,9,KPEG110,圧電サウンダ他励振タイプ(リード線),http://eleshop.jp/shop/g/g6C2132/,160827,3
+1,1,10,shelf0007,電子部品購入時の箱。茶色。,,160827,1
+1,1,11,ペタッツ,トンボ鉛筆 > ペタッツ :いろんなところに貼ってはがせる粘着グミ,http://www.tombow.com/products/petats/,160827,27
+1,1,12,shelf0008,コーナン > Soft Card Case B7,http://www.kohnan-eshop.com/shop/g/g4977564307738/,160827,1
+1,1,13,shelf0009,コーナン > Soft Card Case B7,http://www.kohnan-eshop.com/shop/g/g4977564307738/,160827,1
+1,1,14,shelf0010,購入時のパック,,160827,1
+1,1,15,shelf0011,コーナン > Soft Card Case B7,http://www.kohnan-eshop.com/shop/g/g4977564307738/,160827,1
+1,1,16,容量性タッチ Booster Pack,MSP430 容量性タッチ BoosterPack,http://qiita.com/7of9/items/ab4b2d0bd7dc1de68746,160827,1
+1,1,17,ポリイミドテープ,耐熱テープ（ポリイミドテープ）　１５ｍｍ幅,http://akizukidenshi.com/catalog/g/gT-09380/,160827,1
+1,1,18,ハンダ吸取線,ハンダ吸取線 4.5mm幅 CP-4515,http://eleshop.jp/shop/g/gE6I363/,160827,1
+1,1,19,shelf0012,Raspberry Pi2の箱,,160827,1
 2,1,1,BST76A,NチャネルMOSFET,http://aitendo3.sakura.ne.jp/aitendo_data/product_img/transisitor/BST76A/BST76A_philips.pdf,160827,2
 2,1,2,2SK4017,東芝電界効果トランジスタ。4V駆動。オン抵抗が低い。,http://akizukidenshi.com/download/ds/toshiba/2SK4017.pdf,160827,2
 2,1,3,2SJ681,パワーMOSFET (P-ch 1素子),http://toshiba.semicon-storage.com/jp/product/mosfet/detail.2SJ681.html,160827,3
@@ -25,3 +38,12 @@ shelfNo,row,column,name,about,url,checkDate,amount
 5,2,1,チップ抵抗__3,"68から910, 1M (1608)",,160827,10
 5,2,2,チップ抵抗__4,47kから910k (1608),,160827,10
 6,1,1,FTDI Adapter,akafugu FTDI Adapter,http://www.akafugu.jp/ja/posts/products/ftdi-adapter/,160827,2
+7,1,1,MQ135-4P,空気質センサモジュール [MQ135-4P],http://www.aitendo.com/product/10193,160827,3
+8,1,1,ICB-288,小型ユニバーサル基板 ICB-288,http://www.sunhayato.co.jp/material2/index.php/item?cell003=%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF%E8%A3%BD%E5%93%81&cell004=%E5%B0%8F%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF&name=%E5%B0%8F%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF+ICB-288&id=621&label=1,160827,2
+8,1,2,ICB-88,小型ユニバーサル基板 ICB-88,http://www.sunhayato.co.jp/material2/index.php/item?cell003=%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF%E8%A3%BD%E5%93%81&cell004=%E5%B0%8F%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF&name=%E5%B0%8F%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF+ICB-88&id=605&label=1,160827,4
+9,1,1,22402A-18,ユニバーサル基板 メーカー不明,http://elecomp.ru/shop/product/3627/,160827,3
+9,1,2,TNF44-69,タカチ電機工業 > ユニバーサル基板,https://www.monotaro.com/p/8821/2835/,160827,2
+10,1,1,ペットボトル基板,両面ＴＨ丸型ユニバーサル基板　２７ｍｍ （ペットボトル基板）（１０枚入）,http://akizukidenshi.com/catalog/g/gP-09684/,160827,10
+11,1,1,ユニバーサル基板 PU26x44,ダイセン電子工業　ＰＵ２６×４４ ユニバーサル基板,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=2A4I-NBHD,160827,6
+11,1,2,ユニバーサル基板 16ホール,"
+１６ホールユニバーサル基板（２．５４ｍｍ）",http://akizukidenshi.com/catalog/g/gP-02515/,160827,10
