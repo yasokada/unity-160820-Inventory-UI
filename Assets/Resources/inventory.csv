@@ -73,7 +73,72 @@ shelfNo,row,column,name,about,url,checkDate,amount
 17,1,4,AWG24線端切れ,AWG24の線。色々な色の端切れ,,160827,1
 18,1,1,SHW-S 黒,SHW-S(単線) 0.65mm 10m 外径1.45mm ブレッドボードに最適,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-0AW7,160827,2
 18,1,2,AWG28線端切れ,AWG28の線。色々な色の端切れ,,160827,1
+19,1,1,shelf0021,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+19,1,2,shelf0022,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+19,1,3,shelf0023,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+19,1,4,shelf0024,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+19,1,5,shelf0025,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+19,1,6,shelf0026,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+19,1,7,shelf0027,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,1,shelf0028,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,2,shelf0029,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,3,shelf0030,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,4,shelf0031,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,5,shelf0032,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,6,shelf0033,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,7,shelf0034,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+20,1,8,shelf0035,箱 > ミルクコーヒー,https://www.uha-mikakuto.co.jp/catalog/hardcandy/ca35.html,160827,1
+21,1,1,金被抵抗1.1k,金被抵抗1.1k,http://jp.rs-online.com/web/p/through-hole-fixed-resistors/4911392/,160827,30
+22,1,1,金被抵抗10k,金被抵抗10k,http://akizukidenshi.com/catalog/g/gR-03399/,160827,20
+22,1,2,金被抵抗2.0k,金被抵抗2k,,160827,4
+22,1,3,金被抵抗8.2k,金被抵抗8.2k,,160827,4
+22,1,4,可変抵抗201,可変抵抗201,http://akizukidenshi.com/catalog/g/gP-03273/,160827,3
+22,1,5,可変抵抗203,可変抵抗203,http://akizukidenshi.com/catalog/g/gP-03279/,160827,5
+22,1,6,可変抵抗3296 1k,可変抵抗3296,http://akizukidenshi.com/catalog/g/gP-00973/,160827,3
+23,1,1,ICクリップ赤__230101,ICクリップ赤,,160827,1
+23,1,2,ICクリップ黒__230102,ICクリップ黒,,160827,1
+23,1,3,ケーブル緑__230103,緑. オスメス変換 10cm,,160827,3
+23,1,4,ケーブル赤__230104,赤. オスメス変換 10cm,,160827,3
+24,1,1,積セラ103,積セラ103,,160827,10
+24,1,2,積セラ104,積セラ104,,160827,1
+24,1,3,積セラ105,積セラ105,,160827,2
+25,1,1,ジャンパワイヤ__250101,普通のジャンパワイヤ(オス～オス) 150mm,https://www.switch-science.com/catalog/620/,160827,10
+26,1,1,ケーブルタイ（仮称),ケーブルタイ（仮称). 針金入り。名前不明。白色。,http://k-tai.watch.impress.co.jp/cda/article/stapa/2910.html,160827,20
+27,1,1,金被抵抗51,金被抵抗51,,160827,10
+27,1,2,金被抵抗100,金被抵抗100,,160827,5
+27,1,3,金被抵抗120,金被抵抗120,,160827,5
+27,1,4,金被抵抗470,金被抵抗470,,160827,5
+28,1,1,2SC2720,バイポーラトランジスタ. ピンアサイン EBC. ,http://qiita.com/7of9/items/96be58fd27348dc946b3,160827,3
+28,1,2,金被抵抗2.2k,金被抵抗2.2k,,160827,4
+28,1,3,金被抵抗3.3k__280103,金被抵抗3.3k,,160827,4
+28,1,4,金被抵抗4.7k,金被抵抗4.7k,,160827,9
+28,1,5,2SC1815,バイポーラトランジスタ.,http://qiita.com/7of9/items/085739a9e0323ddd43c9,160827,4
+29,1,1,ケミコン35V22u,ケミコン35V22u,,160827,5
+29,1,2,ケミコン35V47u,ケミコン35V47u,,160827,7
+29,1,3,金被抵抗16k,金被抵抗16k,,160827,7
+29,1,4,金被抵抗20k,金被抵抗20k,,160827,10
+29,1,5,ケミコン25V100u,ケミコン25V100u,,160827,5
+30,1,1,SS-12SDP2,縦型超小型スライドスイッチ[RoHS] SS-12SDP2,http://eleshop.jp/shop/g/g391139/,160827,14
+30,1,2,ジャンパピン,カラー短絡ソケット6mm (各色),http://eleshop.jp/shop/g/gC1K411/,160827,25
+30,1,3,チェックピン赤,オシロプローブ用チェック端子赤,http://eleshop.jp/shop/g/gA6M136/,160827,7
+30,1,4,チェックピン黒,オシロプローブ用チェック端子黒,http://eleshop.jp/shop/g/gA6M135/,160827,7
+31,1,1,圧接型30Pコネクタ,ケーブル圧接型ソケット30P FC-30P,http://eleshop.jp/shop/g/gC32362/,160827,2
+31,1,2,ピンソケット 2x15(30P),ロープロファイルピンソケット　（低メス）　２×１５　（３０Ｐ）　５．７ｍｍ,http://akizukidenshi.com/catalog/g/gC-02906/,160827,2
+32,1,1,ケミコン25V1000u,ケミコン25V1000u,,160827,6
+32,1,2,BA033CC0,2A/1A Fixed Output LDO Regulators. TO220,http://qiita.com/7of9/items/eebf2bb5a32d1ed4f510,160827,2
+33,1,1,NJM2904D,２回路入り単電源用オペアンプ。+3から+32V。0.7mA typ. DIP8,http://akizukidenshi.com/catalog/g/gI-09216/,160827,3
+33,1,2,NHM4580D,２回路入ＨｉＦｉオペアンプ。±2Vから±18V。DIP8,http://akizukidenshi.com/catalog/g/gI-00069/,160827,3
+33,1,3,XHPコネクタ2ピン(ストレート),XHPコネクタ2ピン(ストレート),,160827,1
+33,1,4,XHPコネクタ2ピン(L型),XHPコネクタ2ピン(L型),,160827,3
+33,1,5,XHPコネクタ3ピン(ストレート),XHPコネクタ3ピン(ストレート),,160827,2
+34,1,1,1N4148,汎用小信号高速スイッチング・ダイオード　１Ｎ４１４８,http://akizukidenshi.com/catalog/g/gI-00941/,160827,5
+35,1,1,金被抵抗110,金被抵抗110,,160827,6
+35,1,2,金被抵抗100__350102,金被抵抗100,,160827,5
+35,1,3,金被抵抗3.3k,金被抵抗3.3k,,160827,4
+35,1,4,金被抵抗220,金被抵抗220,,160827,6
 9999,1,1,shelf0015,箱 > チップスター S,http://www.yamazaki-nabisco.co.jp/products_nb/products_snack_nb/,160827,1
 9999,1,2,shelf0016,箱 > チップスター S,http://www.yamazaki-nabisco.co.jp/products_nb/products_snack_nb/,160827,1
 9999,1,3,shelf0017,袋 > Ziploc フリーザパック 中,http://www.asahi-kasei.co.jp/saran/products/ziploc/freezer.html,160827,1
 9999,1,4,shelf0018,袋 > Ziploc フリーザパック 中,http://www.asahi-kasei.co.jp/saran/products/ziploc/freezer.html,160827,1
+9999,1,5,shelf0019,箱 > あずきバー > 半分カット,https://www.imuraya.co.jp/goods/ice/c-azuki/bazuki/,160827,1
+9999,1,6,shelf0020,箱 > あずきバー > 半分カット,https://www.imuraya.co.jp/goods/ice/c-azuki/bazuki/,160827,1
