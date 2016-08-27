@@ -1,10 +1,17 @@
 shelfNo,row,column,name,about,url,checkDate,amount
-1,1,1,HC-SR04,"[不具合品] Ultrasonic sensor..., エコーが安定しない",https://www.switch-science.com/catalog/1606/,160823,1
-1,1,2,2SK4017,東芝電界効果トランジスタ。4V駆動。オン抵抗が低い。,http://akizukidenshi.com/download/ds/toshiba/2SK4017.pdf,160823,1
-1,1,3,ESP-WROOM-02,"電源電圧 3.0-3.6V, 消費電流 平均 80mA, ",https://www.switch-science.com/catalog/2346/,160823,3
-1,2,1,033CC0,三端子レギュレータ,http://www.tyro-teq.com/ds/pdf/b/0055/BAJ2CC0FP.pdf,160823,3
-1,2,2,BST76A,NチャネルMOSFET,http://aitendo3.sakura.ne.jp/aitendo_data/product_img/transisitor/BST76A/BST76A_philips.pdf,160823,3
-1,3,1,AQM0802,I2C接続小型キャラクタLCDモジュール　8x2行,http://akizukidenshi.com/catalog/g/gP-06669/,160826,3
-1,3,2,MPL115A2,MPL115A2使用大気圧センサーモジュールキット（I2C）,http://akizukidenshi.com/catalog/g/gI-04596/,160826,3
-2,1,1,2SJ681,パワーMOSFET (P-ch 1素子),http://toshiba.semicon-storage.com/jp/product/mosfet/detail.2SJ681.html,160826,3
-2,1,2,2SK2541,NチャネルMOSFET,http://www.aitendo.com/product/13578,,
+1,1,1,shelf0002,8連ケース,http://meihokagaku.co.jp/?p=1955,160827,1
+1,1,2,shelf0003,FB-6 (ヘッダー付),http://meihokagaku.co.jp/?p=1995,160827,1
+2,1,1,BST76A,NチャネルMOSFET,http://aitendo3.sakura.ne.jp/aitendo_data/product_img/transisitor/BST76A/BST76A_philips.pdf,160827,2
+2,1,2,2SK4017,東芝電界効果トランジスタ。4V駆動。オン抵抗が低い。,http://akizukidenshi.com/download/ds/toshiba/2SK4017.pdf,160827,2
+2,1,3,2SJ681,パワーMOSFET (P-ch 1素子),http://toshiba.semicon-storage.com/jp/product/mosfet/detail.2SJ681.html,160827,3
+2,1,4,コンデンサ 25v100uF,コンデンサ 25v 100uF,,160827,1
+2,1,5,ICソケット_20105,ICソケット(16pin),,160827,4
+2,1,6,CK-40,sunhayato CK-40,http://www.sunhayato.co.jp/material2/index.php/item?cell003=%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E5%A4%89%E6%8F%9B%E5%9F%BA%E6%9D%BF%E8%A3%BD%E5%93%81&cell004=%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E5%A4%89%E6%8F%9B%E5%9F%BA%E6%9D%BF&name=MicroSD%E7%94%A8%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E5%A4%89%E6%8F%9B%E5%9F%BA%E6%9D%BF%E3%80%80CK-40&id=490&label=1,160827,1
+2,1,7,ICソケット_20107,ICソケット(16pin),,160827,2
+2,1,8,昇圧型ＤＣ－ＤＣコンバータ５Ｖ０．２Ａ出力　ＳｔｅｐＵＰ・ＤＩＰ－Ｖｅｒ．２,昇圧型ＤＣ－ＤＣコンバータ５Ｖ０．２Ａ出力　ＳｔｅｐＵＰ・ＤＩＰ－Ｖｅｒ．２,http://akizukidenshi.com/catalog/g/gM-03451/,160827,2
+3,1,1,ワイヤ_30101,ジャンパ用ワイヤ (一部),,160827,
+3,1,2,ATTiny85-20PU__1,ＡＶＲマイコン　ＡＴＴＩＮＹ８５－２０ＰＵ,http://akizukidenshi.com/catalog/g/gI-09573/,160827,1
+3,1,3,ATTiny85-20PU__2,ＡＶＲマイコン　ＡＴＴＩＮＹ８５－２０ＰＵ,http://akizukidenshi.com/catalog/g/gI-09573/,160827,2
+3,2,1,ユニバーサル基板PU20x24__1,ダイセン工業 ユニバーサル基板 PU20x24,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=7A4I-NBH6,160827,2
+3,2,2,ユニバーサル基板PU20x24__2,ダイセン工業 ユニバーサル基板 PU20x24,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=7A4I-NBH6,160827,1
+3,2,3,ユニバーサル基板PU20x24__3,ダイセン工業 ユニバーサル基板 PU20x24,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=7A4I-NBH6,160827,2
