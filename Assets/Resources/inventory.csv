@@ -18,6 +18,15 @@ shelfNo,row,column,name,about,url,checkDate,amount
 1,1,17,ポリイミドテープ,耐熱テープ（ポリイミドテープ）　１５ｍｍ幅,http://akizukidenshi.com/catalog/g/gT-09380/,160827,1
 1,1,18,ハンダ吸取線,ハンダ吸取線 4.5mm幅 CP-4515,http://eleshop.jp/shop/g/gE6I363/,160827,1
 1,1,19,shelf0012,Raspberry Pi2の箱,,160827,1
+1,1,20,タミヤカラー XF-1,タミヤカラー XF-1 フラットブラック,http://www.tamiya.com/japan/products/list/enamel_flat/kit80301.htm,160827,1
+1,1,21,タミヤカラー XF-2,タミヤカラー XF-2 フラットホワイト,http://www.tamiya.com/japan/products/list/enamel_flat/kit80301.htm,160827,1
+1,1,22,タミヤカラー XF-5,タミヤカラー XF-5 フラットグリーン,http://www.tamiya.com/japan/products/list/enamel_flat/kit80301.htm,160827,1
+1,1,23,タミヤカラー XF-3,タミヤカラー XF-3 フラットイエロー,http://www.tamiya.com/japan/products/list/enamel_flat/kit80301.htm,160827,1
+1,1,24,タミヤカラー X-11,タミヤカラー X-11 クロームシルバー,http://www.tamiya.com/japan/products/list/acrylicmini_gloss/kit81501.htm,160827,1
+1,1,25,shelf0013,紙コップ,,160827,1
+1,1,26,shelf0014,伊右衛門 2g x 20bagsの箱,http://www.kenko.com/product/item/itm_6926180472.html,160827,1
+1,1,27,ヒートクリップ H-2SL,ヒートクリップ〈放熱用クリップ〉 2本組,http://www.goot.jp/handakanren/h-2sl/,160827,1
+1,1,28,ジュンフロン青AWG28,潤工社　ＢＥ６３Ａ３０　ＡＷＧ２８－５０ｍ（青） ラッピング用ジュンフロンＥＴＦＥ電線,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=75L6-48EM,160827,1
 2,1,1,BST76A,NチャネルMOSFET,http://aitendo3.sakura.ne.jp/aitendo_data/product_img/transisitor/BST76A/BST76A_philips.pdf,160827,2
 2,1,2,2SK4017,東芝電界効果トランジスタ。4V駆動。オン抵抗が低い。,http://akizukidenshi.com/download/ds/toshiba/2SK4017.pdf,160827,2
 2,1,3,2SJ681,パワーMOSFET (P-ch 1素子),http://toshiba.semicon-storage.com/jp/product/mosfet/detail.2SJ681.html,160827,3
@@ -43,7 +52,28 @@ shelfNo,row,column,name,about,url,checkDate,amount
 8,1,2,ICB-88,小型ユニバーサル基板 ICB-88,http://www.sunhayato.co.jp/material2/index.php/item?cell003=%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF%E8%A3%BD%E5%93%81&cell004=%E5%B0%8F%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF&name=%E5%B0%8F%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF+ICB-88&id=605&label=1,160827,4
 9,1,1,22402A-18,ユニバーサル基板 メーカー不明,http://elecomp.ru/shop/product/3627/,160827,3
 9,1,2,TNF44-69,タカチ電機工業 > ユニバーサル基板,https://www.monotaro.com/p/8821/2835/,160827,2
+9,1,3,63963J2H,ユニバーサル基板. 22402A-18と同じ形,http://qiita.com/7of9/items/b8426623d6349e119fea,160827,1
 10,1,1,ペットボトル基板,両面ＴＨ丸型ユニバーサル基板　２７ｍｍ （ペットボトル基板）（１０枚入）,http://akizukidenshi.com/catalog/g/gP-09684/,160827,10
 11,1,1,ユニバーサル基板 PU26x44,ダイセン電子工業　ＰＵ２６×４４ ユニバーサル基板,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=2A4I-NBHD,160827,6
 11,1,2,ユニバーサル基板 16ホール,"
 １６ホールユニバーサル基板（２．５４ｍｍ）",http://akizukidenshi.com/catalog/g/gP-02515/,160827,10
+12,1,1,SD1602X,SUNLIKE DISPLAY Model No: SD1602X,http://qiita.com/7of9/items/81172d318139960ef22e,160827,1
+13,1,1,Dサブコネクタ 9Pメス,Ｄサブコネクタ　９Ｐ・メス（半田付けタイプ）,http://akizukidenshi.com/catalog/g/gC-00030/,160827,3
+13,1,2,Dサブコネクタ 9Pオス,Ｄサブコネクタ　９Ｐ・オス（半田付けタイプ）,http://akizukidenshi.com/catalog/g/gC-00029/,160827,3
+13,1,3,15倍ルーペ,ルーペ R-1。マルエス商会にて購入。シンワ測定株式会社製,http://www.shinwasokutei.co.jp/,160827,1
+14,1,1,ESP-WROOM-02,ESP-WROOM-02 Wi-Fiモジュール,https://www.switch-science.com/catalog/2346/,160827,3
+14,1,2,LF-PB30W25C,発振回路内蔵圧電ブザー リードタイプ LF-PB30W25C,http://eleshop.jp/shop/g/gB6N361/,160827,2
+15,1,1,ジュンフロン赤AWG28,ジュンフロンETFE電線　AWG28-100m：赤,http://www.sunhayato.co.jp/material2/index.php/item?cell003=%E6%B2%BB%E5%85%B7%E3%83%BB%E5%B7%A5%E5%85%B7%E8%A3%BD%E5%93%81&cell004=%E3%83%8F%E3%83%B3%E3%83%80%E9%96%A2%E9%80%A3%E7%94%A8%E5%93%81&name=%E3%82%B8%E3%83%A5%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3ETFE%E9%9B%BB%E7%B7%9A%E3%80%80AWG28-100m%EF%BC%9A%E8%B5%A4&id=1023&label=1,160827,1
+15,1,2,ジュンフロン黒AWG28,ジュンフロンETFE電線　AWG28-100m：黒,http://www.sunhayato.co.jp/material2/index.php/item?cell003=%E6%B2%BB%E5%85%B7%E3%83%BB%E5%B7%A5%E5%85%B7%E8%A3%BD%E5%93%81&cell004=%E3%83%8F%E3%83%B3%E3%83%80%E9%96%A2%E9%80%A3%E7%94%A8%E5%93%81&name=%E3%82%B8%E3%83%A5%E3%83%B3%E3%83%95%E3%83%AD%E3%83%B3ETFE%E9%9B%BB%E7%B7%9A%E3%80%80AWG28-100m%EF%BC%9A%E9%BB%92&id=1022&label=1,160827,1
+16,1,1,フラットケーブル14芯,カラースダレケーブル 14C FRX-CF-S 14C. 11cm,http://eleshop.jp/shop/g/gA5G145/,160827,1
+16,1,2,端子付きケーブル(XHP-2),端子付きケーブル (XHP-2) [CB-XHP2P-100],http://www.aitendo.com/product/4818,160827,2
+17,1,1,UL1007 AWG28 赤,UL1007 AWG28 赤 10m. 外径1.2mm 耐圧300V 耐熱80度,,160827,1
+17,1,2,SHW-S 青,SHW-S(単線) 0.65mm 10m 外径1.45mm ブレッドボードに最適,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-0GRZ,160827,1
+17,1,3,UEW ポリウレタン銅線,ポリウレタン銅線（０．２９ｍｍ　２０ｍ）,http://akizukidenshi.com/catalog/g/gP-09583/,160827,1
+17,1,4,AWG24線端切れ,AWG24の線。色々な色の端切れ,,160827,1
+18,1,1,SHW-S 黒,SHW-S(単線) 0.65mm 10m 外径1.45mm ブレッドボードに最適,https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-0AW7,160827,2
+18,1,2,AWG28線端切れ,AWG28の線。色々な色の端切れ,,160827,1
+9999,1,1,shelf0015,箱 > チップスター S,http://www.yamazaki-nabisco.co.jp/products_nb/products_snack_nb/,160827,1
+9999,1,2,shelf0016,箱 > チップスター S,http://www.yamazaki-nabisco.co.jp/products_nb/products_snack_nb/,160827,1
+9999,1,3,shelf0017,袋 > Ziploc フリーザパック 中,http://www.asahi-kasei.co.jp/saran/products/ziploc/freezer.html,160827,1
+9999,1,4,shelf0018,袋 > Ziploc フリーザパック 中,http://www.asahi-kasei.co.jp/saran/products/ziploc/freezer.html,160827,1
